@@ -11,18 +11,31 @@ body{
 main{
     height: 100vh;
     padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2%;
+    column-gap: 1%;
 }
 .user{
     position: relative;
     border: 1px solid red;
+    flex-basis: calc((100% / 7) - 1%);
 }
 .user :first-child{
     display: block;
+    width: 100%;
 }
 .userinfo{
     display: flex;
     position: absolute;
     bottom: 0px;
+    left: 0px;
+    /* right: 0px; */
     background-color: rgba(128, 128, 128, 0.8);
-
+}
+.userinfo p{
+    font-size: 14px;
+}
+.userinfo figure svg{
+    width: 10px;
 }
