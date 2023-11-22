@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dashed white;
+}
+body{
+    color: white;
+    background-color: black;
+}
+main{
+    height: 100vh;
+    padding: 5%;
+}
+.user{
+    position: relative;
+    border: 1px solid red;
+}
+.user :first-child{
+    display: block;
+}
+.userinfo{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(128, 128, 128, 0.8);
+
+}
