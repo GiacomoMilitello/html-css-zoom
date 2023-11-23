@@ -4,12 +4,16 @@
     box-sizing: border-box;
     border: 1px dashed white;
 }
+html{
+    font-family: sans-serif;
+}
 body{
     background-color: black;
     color: white;
-}
-.bar{
     height: 100vh;
+}
+img{
+    display: block;
 }
 .bar-top{
     padding: 10px;
@@ -29,12 +33,20 @@ body{
     background-color: #2e2e2e;
 }
 .main{
-    height: calc(100% - (80px + 60px));
+    height: calc(100% - (60px + 80px));
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: auto;
+    gap: 20px;
 }
 .main .user{
     position: relative;
 }
 .main .user .pinco{
+    padding: 2px;
     position: absolute;
     left: 0;
     bottom: 0;
