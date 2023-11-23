@@ -2,14 +2,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px dashed white; */
+    border: 1px dashed white;
 }
 body{
-    color: white;
     background-color: black;
+    color: white;
+}
+.bar{
+    height: 100vh;
+}
+.bar-top{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    height: 60px;
+}
+.bar-top button{
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #2e2e2e;
+}
+.main{
+    height: calc(100% - (80px + 60px));
+}
+.main .user{
     position: relative;
 }
-main{
+.main .user .pinco{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.8)
+}
+.footer{
+    height: 80px;
+    background-color: #191919;
+}
+/* #speaker{
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center; */
+}
+/* #speaker div{
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.8);
+    border-radius: 5px;
+} */
+
+/* main{
     height: 100vh;
     padding-inline: 5%;
     padding-top: 2%;
@@ -18,31 +67,31 @@ main{
     flex-wrap: wrap;
     row-gap: 2%;
     column-gap: 1%;
-}
-.user{
+} */
+/* .user{
     position: relative;
     border: 1px solid red;
     flex-basis: calc((100% / 7) - 1%);
-}
-.user :first-child{
+} */
+/* .user :first-child{
     display: block;
     width: 100%;
-}
-.userinfo{
+} */
+/* .userinfo{
     display: flex;
     position: absolute;
     bottom: 0px;
     left: 0px;
     /* right: 0px; */
     background-color: rgba(128, 128, 128, 0.8);
-}
-.userinfo p{
+} */
+/* .userinfo p{
     font-size: 14px;
-}
-.userinfo figure svg{
+} */
+/* .userinfo figure svg{
     width: 10px;
-}
-footer{
+} */
+/* footer{
     position: fixed;
     bottom: 0;
     right: 0;
@@ -51,35 +100,23 @@ footer{
     background-color: #1a1a1a;
     display: flex;
     justify-content: space-between;
-}
-#speaker{
-    position: absolute;
-    right: 0;
-    top: 0;
-    /* display: flex;
-    align-items: center; */
-}
-#speaker div{
-    display: inline-block;
-    background-color: rgba(128, 128, 128, 0.8);
-    border-radius: 5px;
-}
-#audiovideo{
+} */
+/* #audiovideo{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-#end{
+} */
+/* #end{
     color: red;
     line-height: 60px;
     background-color: rgba(128, 128, 128, 0.8);
     padding-inline: 8px;
-}
+} */
 /* #speaker div figure{
     line height: 16px;
 } */
-footer > div {
+/* footer > div {
     border: 1px dashed white;
-}
+} */
