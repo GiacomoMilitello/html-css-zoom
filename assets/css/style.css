@@ -14,6 +14,8 @@ body{
 }
 img{
     display: block;
+    /* width: 100%;
+    min-width: 100px; */
 }
 .bar-top{
     padding: 10px;
@@ -55,6 +57,29 @@ img{
 .footer{
     height: 80px;
     background-color: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+/* .footer-left{
+    height: 100%;
+
+} */
+.footer .icon{
+    color: white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.footer .icon svg{
+    height: 25px;
+}
+.footer .icon > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 /* #speaker{
     height: 80px;
