@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 html{
     font-family: sans-serif;
@@ -60,12 +60,16 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    /* padding: 0 15px; */
 }
-/* .footer-left{
-    height: 100%;
-
-} */
+.footer-left{
+    display: flex;
+    gap: 10px;
+}
+.footer-center{
+    display: flex;
+    gap: 10px;
+}
 .footer .icon{
     color: white;
     background-color: transparent;
@@ -81,79 +85,17 @@ img{
     flex-direction: column;
     gap: 2px;
 }
-/* #speaker{
-    height: 80px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    align-items: center; */
+.footer-right{
+    height: 100%;
+    line-height: 80px;
+    background-color: #2e2e2e;
 }
-/* #speaker div{
-    display: inline-block;
-    background-color: rgba(128, 128, 128, 0.8);
-    border-radius: 5px;
-} */
-
-/* main{
-    height: 100vh;
-    padding-inline: 5%;
-    padding-top: 2%;
-    padding-bottom: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 2%;
-    column-gap: 1%;
-} */
-/* .user{
-    position: relative;
-    border: 1px solid red;
-    flex-basis: calc((100% / 7) - 1%);
-} */
-/* .user :first-child{
-    display: block;
-    width: 100%;
-} */
-/* .userinfo{
-    display: flex;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    /* right: 0px; */
-    background-color: rgba(128, 128, 128, 0.8);
-} */
-/* .userinfo p{
-    font-size: 14px;
-} */
-/* .userinfo figure svg{
-    width: 10px;
-} */
-/* footer{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 60px;
-    background-color: #1a1a1a;
-    display: flex;
-    justify-content: space-between;
-} */
-/* #audiovideo{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-} */
-/* #end{
+#end{
     color: red;
-    line-height: 60px;
-    background-color: rgba(128, 128, 128, 0.8);
-    padding-inline: 8px;
-} */
-/* #speaker div figure{
-    line height: 16px;
-} */
-/* footer > div {
-    border: 1px dashed white;
-} */
+    height: 100%;
+    padding-inline: 15px;
+}
+.footer button{
+    border: 0;
+    padding: 10px;
+}
